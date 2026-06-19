@@ -1,0 +1,222 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    background-color: #eef2f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    background-color: #0f2a3d;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffb703;
+    color: #0f2a3d;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    color: #0f2a3d;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #1d4e89;
+}
+
+/* =========================
+   PARAGRAPHS
+========================= */
+p {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* =========================
+   IMAGE STYLING
+========================= */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   ABOUT BOX
+========================= */
+.about {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-left: 6px solid #1d4e89;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   LIST (SERVICES)
+========================= */
+ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+ul li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 6px solid #ffb703;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   FORM STYLING
+========================= */
+form {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #0f2a3d;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+input[type="submit"] {
+    background-color: #1d4e89;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0f2a3d;
+}
+
+input[type="reset"] {
+    background-color: #ffb703;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* =========================
+   MAP (CONTACT PAGE)
+========================= */
+iframe {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #0f2a3d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    img { 
+        width: 95%;
+    }
+}
+
+/* Make sure page takes full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Page layout structure */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content grows to push footer down */
+main {
+    flex: 1;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0f2a3d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
